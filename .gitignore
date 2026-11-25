@@ -1,0 +1,44 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+
+# ---- Secrets ----
+.env
+.env.local
+.env.*.local
+
+# ---- Build / distribution artifacts ----
+build/
+dist/
+*.egg-info/
+*.exe
+*.dll
+*.pdb
+*.zip
+
+# ---- Agent runtime data ----
+.ai-agent/sessions/
+.ai-agent/checkpoints/
+.ai-agent/tools/
+.ai-agent/*.db
+
+# ---- Tooling caches ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---- Editors / OS ----
+.idea/
+.vscode/*
+!.vscode/settings.json
+.DS_Store
+Thumbs.db

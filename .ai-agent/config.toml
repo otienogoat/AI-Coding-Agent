@@ -1,0 +1,15 @@
+hooks_enabled=true
+
+[model]
+name = "nvidia/nemotron-3-ultra-550b-a55b:free"
+
+
+
+[[hooks]]
+name='test_before_tool'
+trigger='before_tool'
+command='python ./scripts/test_tool.py'
+
+[mcp_servers.filesystem]
+command="npx"
+args=["-y","@modelcontextprotocol/server-filesystem",'C:\Users\Administrator\Projects\AI-Coding-Agent']
